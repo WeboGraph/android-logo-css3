@@ -1,3 +1,173 @@
 <!DOCTYPE html>
 <html>
+<head>
+        <meta charset="utf-8">
+        <title>Android Logo</title>
+        <style>
+        body{padding-top:50px;}
+        
+        /* Figur */
+        #android-wrap{
+                transform:scale(1,1);
+                -o-transform:scale(1,1);
+                -ms-transform:scale(1,1);
+                -moz-transform:scale(1,1);
+                -webkit-transform:scale(1,1);
+        }
+        #head,#body{
+                background:#A4C639;
+                margin:12px auto;
+                position:relative;
+                width:279px;
+        }
+
+                /* Head */
+        #head{
+                border-radius:129px 129px 0 0;
+                height:129px;
+                margin-top:30px;
+        }
+        #eye-right,#eye-left{
+                background:white;
+                border-radius:12px;
+                height:24px;
+                position:absolute;
+                top:54px;
+                width:24px;
+        }
+        #eye-left{
+                left:63px;
+        }
+        #eye-right{
+                left:182px;
+        }
+        #ant-right,#ant-left{
+                background:#A4C639;
+                border-radius:4px;
+                height:60px;
+                position:absolute;
+                top:-30px;
+                width:8px;
+        }
+        #ant-left{
+                left:47px;
+                transform:rotate(-30deg);
+                -o-transform:rotate(-30deg);
+                -ms-transform:rotate(-30deg);
+                -moz-transform:rotate(-30deg);
+                -webkit-transform:rotate(-30deg);
+        }
+        #ant-right{
+                left:218px;
+                transform:rotate(30deg);
+                -o-transform:rotate(30deg);
+                -ms-transform:rotate(30deg);
+                -moz-transform:rotate(30deg);
+                -webkit-transform:rotate(30deg);
+        }
+
+                /* Body */
+        #body{
+                border-radius:0 0 31px 31px;
+                height:236px;
+        }
+        #leg-right,#leg-left{
+                border-radius:31px;
+                background:#A4C639;
+                height:180px;
+                position:absolute;
+                top:156px;
+                width:62px;
+        }
+        #leg-right{
+                left:161px;
+        }
+        #leg-left{
+                left:56px;
+        }
+        #arm-right,#arm-left{
+                border-radius:31px;
+                background:#A4C639;
+                height:193px;
+                position:absolute;
+                top:-6px;
+                width:62px;
+        }
+        #arm-right{
+                left:-75px;
+        }
+        #arm-left{
+                left:292px;
+        }
+
+        /* Animation */
+        #head:hover{
+                transform-origin:0 100%;
+                -o-transform-origin:0 100%;
+                -ms-transform-origin:0 100%;
+                -moz-transform-origin:0 100%;
+                -webkit-transform-origin:0 100%;
+                transform:rotate(-5deg);
+                -o-transform:rotate(-5deg);
+                -ms-transform:rotate(-5deg);
+                -moz-transform:rotate(-5deg);
+                -webkit-transform:rotate(-5deg);
+                transition:all 500ms;
+                -o-transition:all 500ms;
+                -ms-transition:all 500ms;
+                -moz-transition:all 500ms;
+                -webkit-transition:all 500ms;
+        }
+        #arm-right:hover{
+                transform-origin:0 0;
+                -o-transform-origin:0 0;
+                -ms-transform-origin:0 0;
+                -moz-transform-origin:0 0;
+                -webkit-transform-origin:0 0;
+                transform:rotate(10deg);
+                -o-transform:rotate(10deg);
+                -ms-transform:rotate(10deg);
+                -moz-transform:rotate(10deg);
+                -webkit-transform:rotate(10deg);
+                transition:all 500ms;
+                -o-transition:all 500ms;
+                -ms-transition:all 500ms;
+                -moz-transition:all 500ms;
+                -webkit-transition:all 500ms;
+        }
+        #arm-left:hover{
+                transform-origin:100% 0;
+                -o-transform-origin:100% 0;
+                -ms-transform-origin:100% 0;
+                -moz-transform-origin:100% 0;
+                -webkit-transform-origin:100% 0;
+                transform:rotate(-10deg);
+                -o-transform:rotate(-10deg);
+                -ms-transform:rotate(-10deg);
+                -moz-transform:rotate(-10deg);
+                -webkit-transform:rotate(-10deg);
+                transition:all 500ms;
+                -o-transition:all 500ms;
+                -ms-transition:all 500ms;
+                -moz-transition:all 500ms;
+                -webkit-transition:all 500ms;
+        }
+        </style>
+</head>
+<body>
+        <div id="android-wrap">
+                <div id="head">
+                        <div id="eye-right"></div>
+                        <div id="eye-left"></div>
+                        <div id="ant-right"></div>
+                        <div id="ant-left"></div>
+                </div>
+                <div id="body">
+                        <div id="arm-right"></div>
+                        <div id="arm-left"></div>
+                        <div id="leg-right"></div>
+                        <div id="leg-left"></div>
+                </div>
+        </div>
+</body>
 </html>
